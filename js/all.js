@@ -19,8 +19,6 @@
         init_classic_menu();
         init_scroll_navigate();        
         init_lightbox();
-        init_team();
-        init_services_2();
         init_map();
         init_bg_video();        
         init_shortcodes();
@@ -708,81 +706,6 @@
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
     }
-    
-    
-    /* ---------------------------------------------
-     Team
-     --------------------------------------------- */   
-     
-    function init_team(){
-    
-        $(".team-carousel").each(function(){
-            $(this).css("--team-item-descr-height", $(this).find(".team-item-descr").height() + "px");
-        });
-        
-        // Hover        
-        $(".team-item").click(function(){
-            if ($("html").hasClass("mobile")) {
-                $(this).toggleClass("js-active");
-            }
-        });
-        
-        // Keayboar navigation for team section        
-        $(".team-social-links > a").on("focus blur", function(){
-             if (!($("html").hasClass("mobile"))) {
-                 $(this).parent().parent().parent().parent().toggleClass("js-active");
-             }       
-        });        
-   
-    }
-    
-    
-    /* ---------------------------------------------
-     Services 2
-     --------------------------------------------- */   
-     
-    function init_services_2(){
-        $(".services-2-button").attr("aria-expanded", "false");
-        $(".services-2-descr").attr("aria-hidden", "true");    
-        $(".services-2-button").click(function(){
-            if ($(this).hasClass("active")){              
-                $(this).removeClass("active");
-                $(this).attr("aria-expanded", "false");
-                $(this).next(".services-2-descr").removeClass("js-visible");
-                $(this).next(".services-2-descr").attr("aria-hidden", "true");
-            } else{
-                $(".services-2-button").removeClass("active");
-                $(".services-2-button").attr("aria-expanded", "false");
-                $(".services-2-button").next(".services-2-descr").removeClass("js-visible");
-                $(".services-2-button").next(".services-2-descr").attr("aria-hidden", "true");
-                $(this).addClass("active");
-                $(this).attr("aria-expanded", "true");
-                $(this).next(".services-2-descr").addClass("js-visible");
-                $(this).next(".services-2-descr").removeAttr("aria-hidden");                
-            }
-        });
-        $(".services-2-button").keydown(function(e){                       
-            if (e.keyCode == 13 || e.keyCode == 32) {                
-                if ($(this).hasClass("active")){              
-                    $(this).removeClass("active");
-                    $(this).attr("aria-expanded", "false");
-                    $(this).next(".services-2-descr").removeClass("js-visible");
-                    $(this).next(".services-2-descr").attr("aria-hidden", "true");
-                } else{
-                    $(".services-2-button").removeClass("active");
-                    $(".services-2-button").attr("aria-expanded", "false");
-                    $(".services-2-button").next(".services-2-descr").removeClass("js-visible");
-                    $(".services-2-button").next(".services-2-descr").attr("aria-hidden", "true");
-                    $(this).addClass("active");
-                    $(this).attr("aria-expanded", "true");
-                    $(this).next(".services-2-descr").addClass("js-visible");
-                    $(this).next(".services-2-descr").removeAttr("aria-hidden");                
-                }                
-                return false;
-            }          
-        });
-    }
-    
     
     /* ---------------------------------------------
      Split Section
