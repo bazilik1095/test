@@ -885,10 +885,10 @@
         $(".video, .resp-media, .blog-media").fitVids();
         $(".work-full-media").fitVids(); 
         
-        // Background Youtube Video
-        $(document).ready(function(){
-            $(".player").mb_YTPlayer();
-        });
+        // // Background Youtube Video
+        // $(document).ready(function(){
+        //     $(".player").mb_YTPlayer();
+        // });
                
     }    
     
