@@ -7161,7 +7161,7 @@ img.services-image{
 /* Work filter bold */
 .works-filter.works-filter-bold{
     font-family: var(--font-alt);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
