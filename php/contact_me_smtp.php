@@ -9,11 +9,11 @@ include("php/SMTP.php");
 
 if($_POST)
 {
-    $to_Email       = "themeguru.envato@gmail.com"; // Replace with recipient email address
+    $to_Email       = "ponomarenkosergiidesign@gmail.com"; // Replace with recipient email address
 	$subject        = 'Message from website '.$_SERVER['SERVER_NAME']; //Subject line for emails
     
     $host           = "smtp.gmail.com"; // Your SMTP server. For example, smtp.gmail.com
-    $username       = "your.email@gmail.com"; //For example, your.email@gmail.com
+    $username       = "ponomarenkosergiidesign@gmail.com"; //For example, your.email@gmail.com
     $password       = "password"; // Your password
     $SMTPSecure     = "ssl"; // For example, ssl
     $port           = 465; // For example, 465
