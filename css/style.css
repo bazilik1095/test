@@ -3480,7 +3480,7 @@ html:not(.mobile) .wow-p{
 .nav-logo-wrap .logo{
     display: flex;
     align-items: center;
-    max-width: 60px;
+    max-width: 50px;
     height: var(--menu-bar-height);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
