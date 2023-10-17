@@ -191,47 +191,60 @@ You can find the code of your language here - https://www.w3schools.com/tags/ref
                 <!-- Divider -->
                 <hr class="mt-0 mb-0 black"/>
                 <!-- End Divider -->
-                
-                
-                <!-- Newsletter Section -->
-                <section class="small-section">
-                    <div class="container position-relative">
-                        
-                        <!-- Newsletter Form -->
-                        <div class="row wow fadeInUp">
-                            <div class="col-lg-8 offset-lg-2">
+
+                     <div class="container"> 
+                                       
+                        <div class="row">
+
+
+                            <div class="col-lg-7 col-xl-6 offset-lg-2 offset-xl-3 pt-30 pt-md-0 mt-5 mb-5">                                
                                 
-                                <h2 class="section-title-tiny font-alt mb-30"><span class="icon-ellipse"></span> Subscribe our newsletter</h2>
-                                
-                                <form id="mailchimp" class="form newsletter-modern">
-                                
-                                    <div class="d-md-flex justify-content-between mb-40">
-                                        <label for="newsletter-email" class="visually-hidden">Your email</label>
-                                        <input placeholder="Enter your email" class="underline newsletter-field mb-sm-20 me-md-4" id="newsletter-email" name="newsletter-email" type="email" pattern=".{5,100}" required aria-required="true">
-                                        <div class="d-md-flex align-items-end">
-                                            <button type="submit" aria-controls="subscribe-result" class="btn btn-mod btn-medium btn-circle text-nowrap" data-btn-animate="y">
-                                                Subscribe now
-                                            </button>
+                                <!-- Contact Form -->
+                                <form class="form contact-form" id="contact_form">
+                                    
+                                    <!-- Name -->
+                                    <div class="form-group d-block d-md-flex align-items-center">
+                                        <label for="name" class="mb-0 mb-sm-10 me-3">Your Name</label>
+                                        <div class="flex-grow-1">
+                                            <input type="text" name="name" id="name" class="input-sm form-control underline text-md-center" placeholder="Enter your name here" pattern=".{3,100}" required aria-required="true">
                                         </div>
                                     </div>
                                     
-                                    <div class="form-tip">
-                                        <i class="icon-info size-16"></i>
-                                        By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                    <!-- Email -->
+                                    <div class="form-group d-block d-md-flex align-items-center">
+                                        <label for="email" class="mb-0 mb-sm-10 me-3">Email Address</label>
+                                        <div class="flex-grow-1">
+                                            <input type="email" name="email" id="email" class="input-sm form-control underline text-md-center" placeholder="Enter your email here" pattern=".{5,100}" required aria-required="true">
+                                        </div>
+                                    </div>
+                                                
+                                    <!-- Message -->
+                                    <div class="form-group">
+                                        <label for="message" class="mb-sm-10">What’s your question?</label>
+                                        <textarea name="message" id="message" class="input-sm form-control underline" style="height: 120px;" placeholder="Enter your message here"></textarea>
+                                    </div>  
+                                                                                     
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <!-- Button -->
+                                            <button class="submit_btn btn btn-mod btn-ellipse" data-btn-animate="ellipse" id="submit_btn" aria-controls="result">Send Message</button> 
+                                        </div>
+                                        <div class="col-sm-7 d-flex align-items-center">
+                                            <!-- Inform Tip -->
+                                            <div class="form-tip pt-30 pt-sm-20">
+                                                <i class="icon-info size-16"></i>
+                                                All the fields are required. By sending the form you agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.
+                                            </div>
+                                        </div>
                                     </div>
                                     
-                                    <div id="subscribe-result" role="region" aria-live="polite" aria-atomic="true"></div>
-                                
+                                    <div id="result" role="region" aria-live="polite" aria-atomic="true"></div>
+                                   
                                 </form>
-                                
-                            </div>
-                        </div>
-                        <!-- End Newsletter Form -->
-                        
+                                <!-- End Contact Form --> 
+                       </div>
                     </div>
-                </section>
-                <!-- End Newsletter Section -->
-            
+                </div>
             </main>
             
             <!-- Footer -->
